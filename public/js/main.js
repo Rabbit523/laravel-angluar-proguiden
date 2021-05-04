@@ -155,57 +155,6 @@ Controllers.CustomTab = function () {
     })
 }
 
-Controllers.Wizard = function (element) {
-    var steps;
-    var current = 0;
-    var stepBack = function () {
-        if (current > 0) {
-            current--;
-            navigate();
-        }
-    };
-    var stepNext = function (e) {
-        if (current < steps.length ) {
-            console.log('test');
-            current++;
-            navigate();
-        }
-    };
-
-    var navigate = function () {
-        steps.removeClass("next");
-        steps.removeClass("prev");
-        for (var i = 0; i < steps.length; i++) {
-            if (i < current) {
-                $(steps[i]).addClass("prev");
-            } else if (i > current) {
-                $(steps[i]).addClass("next");
-            }
-        }
-        $('html, body').animate({
-            scrollTop: $(element).offset().top - 100
-        }, 1000);
-    };
-
-    var initSteps = function () {
-        steps = $(element + " .comparison-step");
-        for (var i = 1; i < steps.length; i++) {
-            $(steps[i]).addClass("next");
-        }
-    };
-
-    var initNavigation = function () {
-        $(element + " .wrapper-btns .prev").click(stepBack);
-        $(element + " .wrapper-btns .next").click(stepNext);
-    };
-
-    var init = function () {
-        initSteps();
-        initNavigation();
-    };
-    init();
-};
-
 /*  */
 Controllers.SingleProduct = function () {
     var init = function () {
@@ -250,27 +199,10 @@ Controllers.contactUs = function () {
     init();
 };
 
-Controllers.settings = function () {
-    var init = function () {
-        new Proguiden.Controllers.floatLabel('.form-group .form-control');
-    };
-    init();
-};
-
-Controllers.comparisonElectricity = function () {
-    var init = function () {
-        new Proguiden.Controllers.Tooltip();
-        new Proguiden.Controllers.floatLabel('.box-form .form-control');
-    };
-    init();
-};
-
 Controllers.CompanyBroadband = function () {
     var init = function () {
         new Proguiden.Controllers.Tooltip();
         new Proguiden.Controllers.CustomTab();
-        new Proguiden.Controllers.floatLabel('.box-form .form-control');
-        new Proguiden.Controllers.floatLabel('.form-block .form-control');
     }
     init();
 };

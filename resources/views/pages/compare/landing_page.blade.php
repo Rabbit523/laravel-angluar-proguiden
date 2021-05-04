@@ -45,10 +45,10 @@
         </article>
         <article class="service consumer-loan">
           <div class="icon">
-            <a href="{{route('compare.consumer.landing_page')}}"></a>
+            <a href=""></a>
           </div>
           <h3>
-            <a href="{{route('compare.consumer.landing_page')}}">Forbrukslån</a>
+            <a href="">Forbrukslån</a>
           </h3>
         </article>
       </div>
