@@ -110,57 +110,7 @@ class PagesController extends Controller
      */
     public function compareBroadbandLandingPage()
     {
-        return view('pages.compare.broadband.step1');
-    }
-
-    /**
-     * Show tjenester broadband landing page
-     * 
-     * @return view 
-     */
-    public function compareBroadbandStep1Page()
-    {
-        return view('pages.compare.broadband.step1');
-    }
-
-    /**
-     * Show tjenester broadband landing page
-     * 
-     * @return view 
-     */
-    public function compareBroadbandStep2Page()
-    {
-        return view('pages.compare.broadband.step2');
-    }
-
-    /**
-     * Show tjenester broadband landing page
-     * 
-     * @return view 
-     */
-    public function compareBroadbandStep3Page()
-    {
-        return view('pages.compare.broadband.step3');
-    }
-
-    /**
-     * Show tjenester broadband landing page
-     * 
-     * @return view 
-     */
-    public function compareBroadbandStep4Page()
-    {
-        return view('pages.compare.broadband.step4');
-    }
-
-    /**
-     * Show tjenester broadband landing page
-     * 
-     * @return view 
-     */
-    public function compareBroadbandStep5Page()
-    {
-        return view('pages.compare.broadband.step5');
+        return view('pages.compare.broadband.landing_page');
     }
 
     /**
@@ -174,93 +124,13 @@ class PagesController extends Controller
     }
 
     /**
-     * Show tjenester credit card landing page
-     * 
-     * @return view 
-     */
-    public function compareConsumerLandingPage()
-    {
-        return view('pages.compare.consumer.landing_page');
-    }
-
-    /**
-     * Show tjenester consumer detail page
-     * 
-     * @return view 
-     */
-    public function compareConsumerDetailPage($consumer)
-    {
-        return view('pages.compare.consumer.detail');
-    }
-
-    /**
      * Show tjenester power landing page
      * 
      * @return view 
      */
     public function comparePowerLandingPage()
     {
-        return view('pages.compare.power.step1');
-    }
-
-        /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep1Page()
-    {
-        return view('pages.compare.power.step1');
-    }
-
-        /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep2Page()
-    {
-        return view('pages.compare.power.step2');
-    }
-
-    /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep3Page()
-    {
-        return view('pages.compare.power.step3');
-    }
-
-    /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep4Page()
-    {
-        return view('pages.compare.power.step4');
-    }
-
-    /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep5Page()
-    {
-        return view('pages.compare.power.step5');
-    }
-
-    /**
-     * Show tjenester power landing page
-     * 
-     * @return view 
-     */
-    public function comparePowerStep6Page()
-    {
-        return view('pages.compare.power.step6');
+        return view('pages.compare.power.landing_page');
     }
 
     //////////////////////////////////////////////////////////////////////
@@ -346,16 +216,6 @@ class PagesController extends Controller
     {
         return view('pages.cashback.payout');
     }
-        
-    /**
-     * Show settigns page
-     * 
-     * @return mixed 
-     */
-    public function cashbackMyProfileSettings()
-    {
-        return view('pages.cashback.settings');
-    }
     
     //********************************************************************* */
     /**
@@ -440,9 +300,9 @@ class PagesController extends Controller
      * 
      * @return mixed 
      */
-    public function adminCampaigns()
+    public function admincampaigns()
     {
-        return view('pages.admin.campaigns');
+        return view('pages.admin.admin-portal-campaigns');
     }
 
     /**
@@ -450,9 +310,9 @@ class PagesController extends Controller
      * 
      * @return mixed 
      */
-    public function adminCategory()
+    public function admincategory()
     {
-        return view('pages.admin.category');
+        return view('pages.admin.admin-portal-category');
     }
 
     /**
@@ -460,9 +320,9 @@ class PagesController extends Controller
      * 
      * @return mixed 
      */
-    public function adminSides()
+    public function admincustomer()
     {
-        return view('pages.admin.sides');
+        return view('pages.admin.admin-portal-customers');
     }
 
     /**
@@ -470,17 +330,8 @@ class PagesController extends Controller
      * 
      * @return mixed 
      */
-    public function adminSingleSides()
+    public function adminslide()
     {
-        return view('pages.admin.single-side');
-    }
-
-    public function adminCustomers()
-    {
-        return view('pages.admin.customers');
-    }
-
-    public function adminSingleCustomers() {
-        return view('pages.admin.single-customer');
+        return view('pages.admin.admin-portal-sides');
     }
 }

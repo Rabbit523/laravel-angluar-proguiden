@@ -36,14 +36,14 @@ return [
     ],
 
     'google' => [
-        'client_id' => env('GOOGLE_ID', '487900139768-td5q7a33iotinedk26s91m48hic0aob9.apps.googleusercontent.com'),
-        'client_secret' => env('GOOGLE_SECRET', 'ETr2uRaWpyfWfFdJ1fRx1_tX'),
-        'redirect' => env('GOOGLE_REDIRECT', 'https://proguiden.fantasylab.no/auth/google/callback'),
+        'client_id' => env('GOOGLE_ID'),
+        'client_secret' => env('GOOGLE_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT'),
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_ID', '556901558094670'),
-        'client_secret' => env('FACEBOOK_SECRET', '5afd0b03c3f968368983feb786dbbb25'),
-        'redirect' => env('FACEBOOK_REDIRECT', 'https://proguiden.fantasylab.no/auth/facebook/callback'),
+        'client_id' => env('FACEBOOK_ID'),
+        'client_secret' => env('FACEBOOK_SECRET'),
+        'redirect' => env('FACEBOOK_REDIRECT'),
     ],
 ];

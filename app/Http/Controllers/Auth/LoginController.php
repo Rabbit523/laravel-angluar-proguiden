@@ -65,12 +65,7 @@ class LoginController extends Controller
         $user = Socialite::driver($provider)->stateless()->user();
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
-        if ($authUser->user_role == "1") {
-            return redirect()->route('admin_sides');
-        } else {
-            return redirect()->route('cashback.my_profile');
-        }
-        
+        return redirect()->route('cashback.my_profile');
     }
 
     /**

@@ -17,17 +17,16 @@
                         <div class="separator">
                             <p>eller</p>
                         </div>
-                        <form action="{{route('authenticate')}}" method="post">
-                            @csrf
+                        <form action="" method="post">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon"><img src="{{ asset('assets/images/email-input-addon.png', env('REDIRECT_HTTPS')) }}" alt=""></div>
+                                    <div class="input-group-addon"><img src="assets/images/email-input-addon.png" alt=""></div>
                                     <input type="email" class="form-control" id="email" name="email" placeholder="E-post">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon"><img src="{{ asset('assets/images/pass-input-addon.png', env('REDIRECT_HTTPS')) }}" alt=""></div>
+                                    <div class="input-group-addon"><img src="assets/images/pass-input-addon.png" alt=""></div>
                                     <input type="password" class="form-control" id="password" name="password" placeholder="Passord">
                                     <a href="" class="remember">Glemt passord?</a>
                                 </div>
@@ -49,4 +48,3 @@
     </section>
 
   </main>
-@endsection

@@ -42,23 +42,7 @@
             </li>
             <li>
               @auth
-                <div class="dropdown">
-                  <button class="btn btn-default navbar-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </span>
-                    <span>Meny</span>
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="{{ route('home') }}">Hjem</a>
-                    <a class="dropdown-item" href="{{ route('cashback.my_profile.payout') }}">Utbetaling</a>
-                    <a class="dropdown-item" href="{{ route('cashback.my_profile.settings') }}">Innstillinger</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{ route('logout') }}">Logg ut</a>
-                  </div>
-                </div>
+                <a href="{{route('logout')}}" class="btn btn-default navbar-btn">Logg ut</a>
               @endauth
               @guest
                 <a href="{{route('login')}}" class="btn btn-default navbar-btn">Logg inn</a>

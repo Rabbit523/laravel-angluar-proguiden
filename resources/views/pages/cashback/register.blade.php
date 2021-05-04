@@ -1,4 +1,4 @@
-@extends('layouts.public') @section('title', 'Registrer') @section('content')
+@extends('layouts.public') @section('title', 'Registrer') @section('content')<!doctype html>
   <main class="proguiden-bli-medlem">
 
     <section class="bli-medlem">
@@ -20,23 +20,22 @@
                                 <div class="separator">
                                     <p>eller</p>
                                 </div>
-                                <form action="{{route('create')}}" method="POST">
-                                    @csrf
+                                <form action="">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <div class="input-group-addon"><img src="{{ asset('assets/images/email-input-addon.png', env('REDIRECT_HTTPS')) }}" alt=""></div>
+                                            <div class="input-group-addon"><img src="assets/images/email-input-addon.png" alt=""></div>
                                             <input type="email" class="form-control" id="email" name="email" placeholder="E-post">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <div class="input-group-addon"><img src="{{ asset('assets/images/pass-input-addon.png', env('REDIRECT_HTTPS')) }}" alt=""></div>
+                                            <div class="input-group-addon"><img src="assets/images/pass-input-addon.png" alt=""></div>
                                             <input type="password" class="form-control" id="password" name="password" placeholder="Passord">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <div class="input-group-addon"><img src="{{ asset('assets/images/pass-input-addon.png', env('REDIRECT_HTTPS')) }}" alt=""></div>
+                                            <div class="input-group-addon"><img src="assets/images/pass-input-addon.png" alt=""></div>
                                             <input type="password" class="form-control" id="confirm" name="confirm" placeholder="Gjenta passord">
                                         </div>
                                     </div>
@@ -48,13 +47,13 @@
                         <div class="col-xs-12 col-sm-6">
                             <div class="features-section">
                                 <ul>
-                                    <li><span><img src="{{ asset('assets/images/cart.png', env('REDIRECT_HTTPS')) }}" class="img-responsive center-block" alt=""></span><p>Bli medlem i dag og få penger tilbake i  over 250 nettbutikker.</p></li>
+                                    <li><span><img src="assets/images/cart.png" class="img-responsive center-block" alt=""></span><p>Bli medlem i dag og få penger tilbake i  over 250 nettbutikker.</p></li>
 
-                                    <li><span><img src="{{ asset('assets/images/cashback-1.png', env('REDIRECT_HTTPS')) }}" class="img-responsive center-block" alt=""></span><p>Få månedlig utbetaling for Cashback rett til din private bankkonto</p></li>
+                                    <li><span><img src="assets/images/cashback-1.png" class="img-responsive center-block" alt=""></span><p>Få månedlig utbetaling for Cashback rett til din private bankkonto</p></li>
 
-                                    <li><span><img src="{{ asset('assets/images/note.png', env('REDIRECT_HTTPS')) }}" class="img-responsive center-block" alt=""></span><p>Ingen skjulte haker, liten skrift eller forpliktelser ved å bli medlem</p></li>
+                                    <li><span><img src="assets/images/note.png" class="img-responsive center-block" alt=""></span><p>Ingen skjulte haker, liten skrift eller forpliktelser ved å bli medlem</p></li>
 
-                                    <li><span><img src="{{ asset('assets/images/notification.png', env('REDIRECT_HTTPS')) }}" class="img-responsive center-block" alt=""></span><p>Få valgfrie nyhetsbrev med gode tilbud og rabatter på e-post</p></li>
+                                    <li><span><img src="assets/images/notification.png" class="img-responsive center-block" alt=""></span><p>Få valgfrie nyhetsbrev med gode tilbud og rabatter på e-post</p></li>
 
                                 </ul>
                             </div>
